@@ -1,4 +1,5 @@
 import Description from '@/Components/UI/Description/Description';
+import Slider from '@/Components/UI/Slider/Slider';
 import { MAIN_C0LOUR } from '@/utils/colors'
 import { Grid } from '@mui/material'
 import React from 'react';
@@ -30,14 +31,13 @@ export default function Works() {
                             long standing accosication with sellers in designing"
                 />
 
-                <Grid container bgcolor='red' sx={{}}>
-                    lgkmbk
-                </Grid>
-
-
             </Grid>
 
+            <Grid container sx={{ pt: 7}}>
 
+                <Slider />
+
+            </Grid>
 
 
         </Grid>
