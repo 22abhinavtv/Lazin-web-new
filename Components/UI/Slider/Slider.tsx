@@ -34,6 +34,30 @@ export default function Slider() {
         {
             title: "Bathroom",
             imageUrl: '/assets/Home/woodsection/wood1.jpeg'
+        },
+        {
+            title: "Bed Room",
+            imageUrl: '/assets/Home/woodsection/wood1.jpeg'
+        },
+        {
+            title: "Dinning Room",
+            imageUrl: '/assets/Home/woodsection/wood1.jpeg'
+        },
+        {
+            title: "Living Room",
+            imageUrl: '/assets/Home/woodsection/wood1.jpeg'
+        },
+        {
+            title: "Bathroom",
+            imageUrl: '/assets/Home/woodsection/wood1.jpeg'
+        },
+        {
+            title: "Bathroom",
+            imageUrl: '/assets/Home/woodsection/wood1.jpeg'
+        },
+        {
+            title: "Bathroom",
+            imageUrl: '/assets/Home/woodsection/wood1.jpeg'
         }
     ]
 
@@ -43,7 +67,7 @@ export default function Slider() {
             <Grid container lg={11} bgcolor={MAIN_C0LOUR} justifyContent='center' sx={{}}>
                 <Swiper
                     slidesPerView={6}
-                    spaceBetween={40}
+                    // spaceBetween={30}
                     centeredSlides={true}
                     pagination={{
                         clickable: true,
@@ -60,22 +84,25 @@ export default function Slider() {
 
                                     <Grid sx={{ pb: 7 }} container bgcolor="">
 
-                                        <Box sx={{
+                                        <Grid sx={{
                                             bgcolor: 'blue',
-                                            width: 250,
-                                            height: 350,
+                                            width: { xs: 260, lg: 250 },
+                                            height: { xs: 150, lg: 350 },
                                             backgroundImage: `url('${data.imageUrl}')`,
                                             backgroundRepeat: 'no-repeat',
                                             backgroundSize: '100% 100%'
                                         }} />
 
-                                        <Typography sx={{
-                                            pl: 1.5,
-                                            pt: 1,
-                                            fontSize: { lg: 20 },
-                                            color: '#000000',
-                                            fontWeight: 540
-                                        }}>{data.title}</Typography>
+                                        <Grid container>
+                                            <Typography sx={{
+                                                pl: { xs: 1, lg: 1.5 },
+                                                pt: 1,
+                                                fontSize: { lg: 20 },
+                                                color: '#000000',
+                                                fontWeight: 540
+                                            }}>{data.title}</Typography>
+                                        </Grid>
+
 
                                         <Grid container sx={{}}>
 
