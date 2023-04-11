@@ -19,20 +19,25 @@ export default function Works() {
 
                 <Heading heading='few of our latest creations' />
 
-                
-                    <Description
 
-                        justifyContent='start'
-                        textAlign="start"
-                        lg='5'
+                <Description
 
-                        description="The extent of our firm size of our global interor design extends and
+                    justifyContent='start'
+                    textAlign="start"
+                    lg='5'
+
+                    description="The extent of our firm size of our global interor design extends and
                             long standing accosication with sellers in designing"
-                    />
-               
+                />
+
+                <Grid container bgcolor='red' sx={{}}>
+                    lgkmbk
+                </Grid>
 
 
             </Grid>
+
+
 
 
         </Grid>
