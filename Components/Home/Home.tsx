@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material'
 import React from 'react'
+import Form from '../UI/Form/Form'
 import Heading from '../UI/Heading/Heading'
 import ImageContent from '../UI/ImageContent/ImageContent'
 import Slider from '../UI/Slider/Slider'
@@ -29,9 +30,9 @@ export default function Home() {
 
             <Section3 />
 
-            <Review />
+            {/* <Review /> */}
 
-            <Slider2 />
+            <Form />
 
         </Grid >
     )
