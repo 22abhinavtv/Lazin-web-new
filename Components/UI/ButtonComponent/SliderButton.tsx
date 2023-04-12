@@ -16,6 +16,7 @@ export default function SliderButton(props) {
                     pl: { xs: 1, sm: 1, lg: 2 },
                     pr: { xs: 1, sm: 1, lg: 2 },
                     color: '#ffff',
+                    borderColor:'#ffff',
                     fontWeight: 600,
                 }}>{props.value}</Typography>
 

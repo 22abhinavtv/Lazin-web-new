@@ -66,32 +66,53 @@ export default function Slider() {
         <Grid container justifyContent='center'>
             <Grid container lg={11} bgcolor={MAIN_C0LOUR} justifyContent='center' sx={{}}>
                 <Swiper
-                    slidesPerView={6}
-                    // spaceBetween={30}
+
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 0,
+                        },
+                        600: {
+                            slidesPerView: 1,
+                        },
+                        900: {
+                            slidesPerView: 5,
+                        },
+                        1200: {
+                            slidesPerView: 5,
+                        },
+                        1536: {
+                            slidesPerView: 5,
+                        },
+                    }}
+
                     centeredSlides={true}
                     pagination={{
                         clickable: true,
                     }}
+
                     modules={[Pagination]}
                 >
 
                     {
                         swiperItems.map((data: any, index: any) =>
 
-                            <Grid key={index} container bgcolor={MAIN_C0LOUR}>
+                            <Grid key={index} container bgcolor={MAIN_C0LOUR} sx={{ position: 'relative' }}>
 
                                 <SwiperSlide >
 
                                     <Grid sx={{ pb: 7 }} container bgcolor="">
 
-                                        <Grid sx={{
+                                        <Box sx={{
+
                                             bgcolor: 'blue',
                                             width: { xs: 260, lg: 250 },
                                             height: { xs: 150, lg: 350 },
                                             backgroundImage: `url('${data.imageUrl}')`,
                                             backgroundRepeat: 'no-repeat',
                                             backgroundSize: '100% 100%'
-                                        }} />
+                                        }} >
+
+                                        </Box>
 
                                         <Grid container>
                                             <Typography sx={{
