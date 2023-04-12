@@ -100,35 +100,40 @@ export default function Slider() {
 
                                 <SwiperSlide >
 
-                                    <Grid sx={{ pb: 7 }} container bgcolor="">
+                                    <Grid sx={{ pb: 7 }} container >
 
-                                        <Box sx={{
+                                        <Grid bgcolor="#fff" sx={{
+                                            boxShadow: "rgba(17, 17, 26, 0.1) 0px 0px 16px",
+                                            borderRadius: 1
+                                        }}>
+                                            <Box sx={{
 
-                                            bgcolor: 'blue',
-                                            width: { xs: 260, lg: 250 },
-                                            height: { xs: 150, lg: 350 },
-                                            backgroundImage: `url('${data.imageUrl}')`,
-                                            backgroundRepeat: 'no-repeat',
-                                            backgroundSize: '100% 100%'
-                                        }} >
+                                                bgcolor: 'blue',
+                                                width: { xs: 260, lg: 250 },
+                                                height: { xs: 150, lg: 350 },
+                                                backgroundImage: `url('${data.imageUrl}')`,
+                                                backgroundRepeat: 'no-repeat',
+                                                backgroundSize: '100% 100%'
+                                            }} >
 
-                                        </Box>
+                                            </Box>
 
-                                        <Grid container>
-                                            <Typography sx={{
-                                                pl: { xs: 1, lg: 1.5 },
-                                                pt: 1,
-                                                fontSize: { lg: 20 },
-                                                color: '#000000',
-                                                fontWeight: 540
-                                            }}>{data.title}</Typography>
-                                        </Grid>
+                                            <Grid container>
+                                                <Typography sx={{
+                                                    pl: { xs: 1, lg: 1.5 },
+                                                    pt: 2,
+                                                    fontSize: { lg: 20 },
+                                                    color: '#000000',
+                                                    fontWeight: 540
+                                                }}>{data.title}</Typography>
+                                            </Grid>
 
 
-                                        <Grid container sx={{}}>
+                                            <Grid container sx={{ pt: 1, pb: 1 }}>
 
-                                            <SliderButton value="See Full Project" />
+                                                <SliderButton value="See Full Project" />
 
+                                            </Grid>
                                         </Grid>
 
                                     </Grid>
@@ -144,16 +149,3 @@ export default function Slider() {
         </Grid >
     )
 }
-
-
-
-
-
-{/* <Grid container justifyContent="center" sx={{}}>
-
-                                        <img
-                                            width="70%"
-                                            src={data.imageUrl} alt=""
-                                        />
-
-                                    </Grid> */}

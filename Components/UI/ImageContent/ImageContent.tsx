@@ -4,9 +4,8 @@ import Heading from '../../UI/Heading/Heading'
 import ButtonComponent from '../ButtonComponent/ButtonComponent';
 import Description from '../Description/Description';
 
-export default function ImageContent(props: any) {
+export default function ImageContent(props: string) {
 
-    console.log("hiiiiiiiiiiiiiiiiiiiii", props.dir);
 
 
     return (
