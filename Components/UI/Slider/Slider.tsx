@@ -104,7 +104,7 @@ export default function Slider() {
 
                                         <Grid bgcolor="#fff" sx={{
                                             boxShadow: "rgba(17, 17, 26, 0.1) 0px 0px 16px",
-                                            borderRadius: 1
+                                            borderRadius: 4
                                         }}>
                                             <Box sx={{
 
