@@ -1,4 +1,5 @@
 import Footer from '@/Components/UI/Footer/Footer'
+import Form from '@/Components/UI/Form/Form'
 import Header from '@/Components/UI/Header/Header'
 import MobileHeader from '@/Components/UI/Header/MobileHeader'
 import { Grid } from '@mui/material'
@@ -15,6 +16,8 @@ export default function Home() {
       <MobileHeader />
 
       <MainPage />
+
+      <Form />
 
       <Footer />
 

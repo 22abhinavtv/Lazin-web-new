@@ -9,6 +9,7 @@ import Banner from './Banner/Banner'
 import Review from './Review/Review'
 import Section2 from './Section2/Section2'
 import Section3 from './Section3/Section3'
+import Section4 from './Section4/Section4'
 import UsedWoods from './UsedWoods/UsedWoods'
 import WorkFlow from './WorkFlow/WorkFlow'
 import Works from './Works/Works'
@@ -30,9 +31,11 @@ export default function Home() {
 
             <Section3 />
 
+            <Section4 />
+
             {/* <Review /> */}
 
-            <Form />
+
 
         </Grid >
     )

@@ -75,7 +75,7 @@ export default function Form() {
 
                         </Grid>
 
-                      
+
 
                     </Grid>
 
@@ -83,11 +83,11 @@ export default function Form() {
                     <Grid lg={5} container bgcolor="" justifyContent="center" alignItems="center">
 
                         <Grid>
-                            <Box sx={{ m: 3, cursor: 'pointer' }}
+                            <Box sx={{ m: 3, mb: 3, cursor: 'pointer' }}
                                 component="img"
                                 sx={{
-                                    height: 350,
-                                    width: 350,
+                                    height: { lg: 350 },
+                                    width: { lg: 350 },
                                 }}
                                 alt="google map image"
                                 src="/assets/map/map.jpeg"
