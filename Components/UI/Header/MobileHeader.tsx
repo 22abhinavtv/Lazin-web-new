@@ -11,29 +11,32 @@ export default function MobileHeader() {
 
   const router = useRouter();
 
-
   const navbarItems = [
     {
-      title: 'Home',
-      path: "/"
+        title: 'Home',
+        path: "/"
     },
     {
-      title: 'About',
-      path: '/'
+        title: 'Furniture',
+        path: "/"
     },
     {
-      title: 'Project',
-      path: '/'
+        title: 'About',
+        path: '/'
     },
     {
-      title: 'Gallery',
-      path: '/'
+        title: 'Project',
+        path: '/'
     },
     {
-      title: 'Contact Us',
-      path: '/'
+        title: 'Gallery',
+        path: '/'
+    },
+    {
+        title: 'Contact Us',
+        path: '/'
     }
-  ]
+]
 
 
   const MenuBar = () => {

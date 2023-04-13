@@ -14,6 +14,10 @@ export default function Header() {
             path: "/"
         },
         {
+            title: 'Furniture',
+            path: "/furniture"
+        },
+        {
             title: 'About',
             path: '/'
         },
