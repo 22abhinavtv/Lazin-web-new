@@ -33,7 +33,7 @@ export default function Header() {
 
     return (
         <Grid bgcolor={MAIN_C0LOUR} container sx={{
-            position: 'absolute',
+            position: 'fixed',
             display: { xs: 'none', md: 'flex' }
         }}>
 
