@@ -49,7 +49,10 @@ export default function Form() {
                                 <Grid key="index" xs={12} lg={6} md={6} sx={{ p: 1 }}>
 
                                     <TextField sx={{
-                                        width: "100%", bgcolor: '#ffff', borderColor: '#ffff',
+                                        width: "100%", bgcolor: '#ffff',
+                                        borderColor: '#ffff',
+                                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px"
+
                                     }} placeholder={data.label} />
 
                                 </Grid>
@@ -63,15 +66,16 @@ export default function Form() {
                                     placeholder="Message"
                                     sx={{
                                         width: "100%", bgcolor: '#ffff',
-                                        //border: 'rgba(0, 0, 0, 0.1) 0px 10px 50px',
-                                        //borderColor: '#ffff',
-                                        border: '1px solid #fefefe !important',
-                                       
+                                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px"
                                     }} />
 
                             </Grid>
 
+                            <Grid></Grid>
+
                         </Grid>
+
+                      
 
                     </Grid>
 
@@ -101,3 +105,4 @@ export default function Form() {
 }
 
 
+//box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
