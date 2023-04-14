@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { MAIN_C0LOUR } from '@/utils/colors';
+
 
 export default function MobileHeader() {
 
@@ -13,30 +13,30 @@ export default function MobileHeader() {
 
   const navbarItems = [
     {
-        title: 'Home',
-        path: "/"
+      title: 'Home',
+      path: "/"
     },
     {
-        title: 'Furniture',
-        path: "/"
+      title: 'Furniture',
+      path: "/"
     },
     {
-        title: 'About',
-        path: '/'
+      title: 'About',
+      path: '/'
     },
     {
-        title: 'Project',
-        path: '/'
+      title: 'Project',
+      path: '/'
     },
     {
-        title: 'Gallery',
-        path: '/'
+      title: 'Gallery',
+      path: '/'
     },
     {
-        title: 'Contact Us',
-        path: '/'
+      title: 'Contact Us',
+      path: '/'
     }
-]
+  ]
 
 
   const MenuBar = () => {
@@ -48,7 +48,7 @@ export default function MobileHeader() {
 
     <Grid container sx={{
       display: { xs: "block", md: "none" },
-      bgcolor: "red"
+      bgcolor: '#FEF0E5'
     }}>
 
       <Box sx={{
@@ -56,11 +56,13 @@ export default function MobileHeader() {
         justifyContent: "center", alignItems: "center",
         py: 1,
         position: "fixed",
-        zIndex: "110", top: "0", left: "0"
+        zIndex: "110", top: "0", left: "0",
+        bgcolor: "#FEF0E5"
+        // bgcolor: { MAIN_C0LOUR }
       }} >
 
         <Box position="fixed" left="0" sx={{
-          bgcolor: { xs: '', sm: '' }
+          bgcolor: "#FEF0E5"
         }}>
 
           {menu ? <CloseIcon sx={{ ml: 2, color: "#513328", fontSize: { xs: '2rem' } }} onClick={() => setMenu(!menu)} /> :
@@ -69,10 +71,12 @@ export default function MobileHeader() {
         </Box>
 
         <Box
+
           onClick={() => router.push('/')}
           style={{ cursor: 'pointer' }}
           component="img"
           sx={{
+            bgcolor: "#FEF0E5",
             pt: 1,
             pb: 1,
             height: 50,
@@ -89,12 +93,12 @@ export default function MobileHeader() {
       <Box sx={{
         transition: "0.5s",
         width: "100%", height: "fit-content",
-        position: "fixed", zIndex: "100", left: "0%", top: menu ? "50px" : "-40%",
+        position: "fixed", zIndex: "100", left: "0%", top: menu ? "50px" : "-40%", bgcolor: "#FEF0E5"
       }}>
 
         {navbarItems.map((data: any, index: any) =>
 
-          <Box key={index} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", p: 2 }}>
+          <Box key={index} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", p: 2, bgcolor: "#FEF0E5" }}>
 
             <Box onClick={MenuBar} sx={{ display: "flex", justifyContent: "center", alignItems: "center", }}>
 

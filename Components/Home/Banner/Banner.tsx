@@ -4,8 +4,10 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <Grid container height='100vh' bgcolor={MAIN_C0LOUR}>
-
+        <Grid container height='100vh' bgcolor={MAIN_C0LOUR} sx={{
+            mt: { xs: 7, lg: 10 }
+        }}>
+            dfl,f,g
         </Grid>
     )
 }

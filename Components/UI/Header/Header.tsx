@@ -36,10 +36,11 @@ export default function Header() {
     ]
 
     return (
-        <Grid bgcolor={MAIN_C0LOUR} container sx={{
-            position: 'fixed',
-            display: { xs: 'none', md: 'flex' }
-        }}>
+        <Grid bgcolor={MAIN_C0LOUR}
+            container sx={{
+                position: 'fixed',
+                display: { xs: 'none', md: 'flex' }
+            }}>
 
             <Grid container md={4} lg={6}>
 
@@ -80,7 +81,6 @@ export default function Header() {
                             >{data.title}</Typography>
                         )
                     }
-
 
                 </Grid>
 
