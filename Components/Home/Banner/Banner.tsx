@@ -5,9 +5,9 @@ import React from 'react'
 export default function Banner() {
     return (
         <Grid container height='100vh' bgcolor={MAIN_C0LOUR} sx={{
-            mt: { xs: 7, lg: 10 }
+            mt: { xs: 7, lg: 10 }, justifyContent: 'center', alignItems: 'center'
         }}>
-            dfl,f,g
+            
         </Grid>
     )
 }
