@@ -6,12 +6,11 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <Grid container height='70vh' bgcolor={MAIN_C0LOUR} sx={{
-            mt: { xs: 7, lg: 10 }
+        <Grid container bgcolor={MAIN_C0LOUR} sx={{
+            mt: { xs: 7, lg: 10 },
         }}>
 
-            <Grid lg={6} container alignItems="center" sx={{
-                //bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' },
+            <Grid md={6} lg={6} sm={6} container alignItems="center" sx={{
                 //bgcolor: MAIN_C0LOUR
             }}>
 
@@ -19,27 +18,35 @@ export default function Banner() {
                 <Grid
                     component="img"
                     sx={{
-                        height: { xs: 250, lg: 525 },
-                        width: { xs: 250, lg: 650 },
-                        ml: { xs: 3, lg: 'auto' }
+                        height: 525,
+                        width: 650,
+                        maxHeight: { xs: 233, sm: 300, md: 167 },
+                        maxWidth: { xs: 300, sm: 350, md: 250 },
+                        ml: { xs: 0, lg: 'auto' },
+                        m: { xs: 2 }
                     }}
                     alt="The house from the offer."
                     src="assets/furniture/banner/furniture-banner.jpeg"
 
                 />
+            </Grid>
+
+            <Grid container md={6} lg={5} sm={6} sx={{
+                bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' },
+
+            }}>
+                <Typography sx={{}}>
+                    Furniture that <br />
+                    Everyone <br />
+                    Loves
+                </Typography>
+
 
             </Grid>
 
-            <Grid lg={6} container bgcolor="red" >
-
-                <Grid container bgcolor="blue">cvbcv</Grid>
-
-                <Grid container sx={{
-                    bgcolor: { xs: "green", sm: 'green', md: 'yellow', lg: 'pink' }
-                }}>cvbcv</Grid>
-
-            </Grid>
 
         </Grid>
+
+
     )
 }
