@@ -42,7 +42,7 @@ export default function ImageContent(props: string) {
 
                     <Heading
                         heading="A catelogue with the best of modern design" />
-
+                        
                     <Grid>
 
                         <Description
