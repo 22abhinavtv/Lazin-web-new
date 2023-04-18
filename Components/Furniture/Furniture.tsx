@@ -5,6 +5,9 @@ import Banner from './Banner/Banner'
 import Items from './Items/Items'
 
 export default function Furniture() {
+
+   
+
     return (
         <Grid container>
 

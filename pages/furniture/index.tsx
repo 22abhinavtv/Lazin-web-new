@@ -9,12 +9,9 @@ function index() {
     return (
         <Grid container>
 
-            <Header />
+            {/* <Header /> */}
 
-            <MobileHeader />
-
-
-
+            {/* <MobileHeader /> */}
 
             <Furniture />
 
@@ -23,7 +20,7 @@ function index() {
 
             
 
-            <Footer />
+            {/* <Footer /> */}
         </Grid>
     )
 }
