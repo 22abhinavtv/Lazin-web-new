@@ -40,41 +40,18 @@ export default function Items() {
     ]
 
     return (
-        <Grid container justifyContent="center" bgcolor={MAIN_C0LOUR} sx={{}} >
+        <Grid container item>
 
-
-
-            <Grid container sx={{
-                bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' }
+            <Grid container xs={6} md={4} lg={3} sx={{
+                bgcolor: "red",
+                width: 500
             }}>
 
-                {
-                    items.map((item: any, index: any) =>
-
-                        <Grid key={index} container xs={6} md={4} lg={3} justifyContent='center' bgcolor="" >
-
-                            <Box sx={{
-                                width: { xs: 200, lg: 300 },
-                                height: { xs: 250, lg: 400 },
-
-                                bgcolor: 'blue',
-                                m: 2,
-                                justifyContent: 'center', alignItems: 'center'
-                            }}>
-                                xlvmb
-                            </Box>
-
-                        </Grid>
-
-                    )
-                }
+                dvk
 
             </Grid>
 
-
-
-
-        </Grid >
+        </Grid>
     )
 }
 
