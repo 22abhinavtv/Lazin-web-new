@@ -40,14 +40,21 @@ export default function Items() {
     ]
 
     return (
-        <Grid container item>
+        <Grid container   item bgcolor="red" justifyContent="center" >
 
-            <Grid container xs={6} md={4} lg={3} sx={{
-                bgcolor: "red",
-                width: 500
-            }}>
+            <Grid item container  >
 
-                dvk
+                {
+                    items.map((data: any, index: any) =>
+
+                        <Grid item container key={index} bgcolor={data.color} xs={6} md={4} lg={3} justifyContent="center"   >
+
+                            fdskjg
+
+                        </Grid>
+
+                    )
+                }
 
             </Grid>
 
