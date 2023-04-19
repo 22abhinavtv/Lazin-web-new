@@ -1,7 +1,7 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 
-export default function Description(props: String) {
+export default function Description(props: any) {
     return (
 
         <Grid container

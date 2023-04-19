@@ -1,26 +1,15 @@
-import Footer from '@/Components/UI/Footer/Footer'
-import Form from '@/Components/UI/Form/Form'
-import Header from '@/Components/UI/Header/Header'
-import MobileHeader from '@/Components/UI/Header/MobileHeader'
+import { HomePage } from '@/Components/Home/HomePage'
 import { Grid } from '@mui/material'
+import React from 'react'
 
-import MainPage from './MainPage'
-
-
-export default function Home() {
+const index = () => {
   return (
     <Grid container >
 
-      <Header />
-
-      <MobileHeader />
-
-      <MainPage />
-
-      <Form />
-
-      <Footer />
+      <HomePage />
 
     </Grid>
   )
 }
+
+export default index

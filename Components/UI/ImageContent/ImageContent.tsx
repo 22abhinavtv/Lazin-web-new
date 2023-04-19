@@ -1,74 +1,51 @@
-import { Button, Grid } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
 import Heading from '../../UI/Heading/Heading'
-import ButtonComponent from '../ButtonComponent/ButtonComponent';
 import Description from '../Description/Description';
+import { PrimaryButton } from '../Button/CustomizedButton';
+import { SECONDARY_COLOR } from '@/utils/colors';
+import { H2, H3, H4 } from '../Typography/Typography';
 
-export default function ImageContent(props: string) {
+export default function ImageContent(props: any) {
 
-
+    const { image, title, description } = props;
 
     return (
-        <Grid container
-            bgcolor="#F5F5F5"
-            justifyContent="center" sx={{
-                pt: { xs: 2, sm: 2, md: 4, lg: '' },
-                pb: { xs: 1, sm: 1, md: 2, lg: 4 },
-                //bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' }
-            }}>
 
-            <Grid height='' container lg={12} bgcolor="" justifyContent="space-around" flexDirection={props.direction}>
+        <Grid container bgcolor="#F5F5F5" justifyContent="center" py={10}>
 
-                <Grid container xs={12} sm={12} md={12} lg={6} sx={{
-                    bgcolor: '',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    p: 3
-                    //bgcolor: { xs: 'blue', sm: 'red', md: 'yellow', lg: 'green' }
+            <Grid container lg={10} justifyContent="center" alignItems="center">
 
-                }}>
+                <Grid container justifyContent="center" md={4} sx={{ p: 2 }}>
 
-                    <Grid container xs={6} sm={5} lg={7}>
-
-                        <img width='100%' src="/assets/Home/services/wood1.jpeg" alt="" />
-
-                    </Grid>
+                    <img width='80%' src={image} alt="" />
 
                 </Grid>
 
 
+                <Grid container md={6}>
 
-                <Grid container xs={12} sm={6} md={6} lg={6} bgcolor='' alignItems="center" justifyContent="space-between" sx={{ p: 3 }}>
+                    <H2 fontFamily='Syne'>{title}</H2>
 
-                    <Heading
-                        heading="A catelogue with the best of modern design" />
-                        
-                    <Grid>
+                    <Typography variant='body1' fontWeight="semibold" sx={{
+                        my: 3,
+                        color: "grey"
+                    }}>{description}</Typography>
 
-                        <Description
 
-                            lg='10'
+                    <PrimaryButton px={6} bgcolor={SECONDARY_COLOR} >Explore Now</PrimaryButton>
 
-                            description='Answer. While there is no official minimum font size for the web, it is generally agreed upon that 16px for body text is a good 
-                            starting point. Of course, some text will be smaller and headings will often times be larger. But, '
-                        />
 
-                    </Grid>
+                </Grid >
 
-                    <Grid container justifyContent="center">
+                <Grid container xs={5} md={2} justifyContent="center" alignItems="end" bgcolor="">
 
-                        <ButtonComponent
-                            value="Explore Now"
-                        />
-
-                    </Grid>
+                    <img width="60%" alt="The house from the offer." src="/assets/home/banner/shape-2.png" />
 
                 </Grid>
 
             </Grid>
 
-
-
-        </Grid>
+        </Grid >
     )
 }

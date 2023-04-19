@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 
-export default function MobileHeader() {
+export const MobileNavBar = () => {
 
   const [menu, setMenu] = useState(false)
 
@@ -58,7 +58,7 @@ export default function MobileHeader() {
         position: "fixed",
         zIndex: "110", top: "0", left: "0",
         bgcolor: "#FEF0E5"
-        // bgcolor: { MAIN_C0LOUR }
+        // bgcolor: { MAIN_COLOR }
       }} >
 
         <Box position="fixed" left="0" sx={{

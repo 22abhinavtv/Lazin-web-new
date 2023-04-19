@@ -1,3 +1,3 @@
-export const MAIN_C0LOUR = '#FEF0E5'
+export const MAIN_COLOR = '#FEF0E5'
 
-export const SECONDARY_COLOUR = '#513328'
+export const SECONDARY_COLOR = '#513328'

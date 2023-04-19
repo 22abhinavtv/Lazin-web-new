@@ -4,7 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useRouter } from 'next/router';
-import { SECONDARY_COLOUR } from '@/utils/colors';
+import { SECONDARY_COLOR } from '@/utils/colors';
 
 export default function Footer() {
   const router = useRouter();
@@ -98,7 +98,7 @@ export default function Footer() {
   ];
 
   return (
-    <Grid container bgcolor={SECONDARY_COLOUR} sx={{
+    <Grid container bgcolor={SECONDARY_COLOR} sx={{
       color: '#ffff', alignItems: 'center',
       //mt: 10
     }}>

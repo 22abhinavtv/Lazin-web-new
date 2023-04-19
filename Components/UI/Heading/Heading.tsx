@@ -1,8 +1,8 @@
-import { MAIN_C0LOUR } from '@/utils/colors'
+import { MAIN_COLOR } from '@/utils/colors'
 import { Container, Grid, Typography } from '@mui/material'
 import React from 'react'
 
-export default function Heading(props: string) {
+export default function Heading(props: any) {
 
     return (
         <Grid >

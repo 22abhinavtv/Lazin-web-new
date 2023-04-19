@@ -1,10 +1,10 @@
-import { MAIN_C0LOUR } from '@/utils/colors';
+import { MAIN_COLOR } from '@/utils/colors';
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { useRouter } from 'next/router';
 import React from 'react';
 //import Logo from '../../../public/assets/logo/logo.png'
 
-export default function Header() {
+export const NavBar = () => {
 
     const router = useRouter();
 
@@ -19,26 +19,26 @@ export default function Header() {
         },
         {
             title: 'About',
-            path: '/'
+            path: '/about'
         },
         {
             title: 'Project',
-            path: '/'
+            path: '/project'
         },
         {
             title: 'Gallery',
-            path: '/'
+            path: '/gallery'
         },
         {
             title: 'Contact Us',
-            path: '/'
+            path: '/contactus'
         }
     ]
 
     return (
-        <Grid bgcolor={MAIN_C0LOUR}
-            container sx={{
-                position: 'fixed',
+        <Grid bgcolor={MAIN_COLOR}
+            container alignItems="center" sx={{
+                position: 'fixed', top: 0, left: 0, zIndex: "100",
                 display: { xs: 'none', md: 'flex' }
             }}>
 
@@ -70,7 +70,7 @@ export default function Header() {
                             <Typography
 
                                 sx={{
-                                    fontWeight: "550",
+                                    fontWeight: router.asPath === data.path ? "bold" : "normal",
                                     fontFamily: 'Noto Sans'
                                 }}
 

@@ -1,17 +1,16 @@
 import Heading from '@/Components/UI/Heading/Heading'
-import { MAIN_C0LOUR } from '@/utils/colors'
-import { Box } from '@material-ui/core'
+import { MAIN_COLOR } from '@/utils/colors'
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 
 export default function Banner() {
     return (
-        <Grid container bgcolor={MAIN_C0LOUR} sx={{
+        <Grid container bgcolor={MAIN_COLOR} sx={{
             mt: { xs: 7, lg: 10 },
         }}>
 
             <Grid md={6} lg={6} sm={6} container alignItems="center" sx={{
-                //bgcolor: MAIN_C0LOUR
+                //bgcolor: MAIN_COLOR
             }}>
 
 
