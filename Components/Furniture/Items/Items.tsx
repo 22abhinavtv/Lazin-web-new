@@ -1,5 +1,5 @@
-import { MAIN_C0LOUR } from '@/utils/colors'
-import { Box, Grid } from '@mui/material'
+import { MAIN_C0LOUR, SECONDARY_COLOUR } from '@/utils/colors'
+import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 
 export default function Items() {
@@ -12,44 +12,45 @@ export default function Items() {
         },
         {
             item: '2',
-            color: 'blue',
+            color: '#E1C7A0',
             imageUrl: '/assets/furniture/items/table.png'
         },
         {
             item: '2',
-            color: 'green',
+            color: '#E1C7A0',
             imageUrl: '/assets/furniture/items/chair.png'
         },
         {
             item: '1',
-            color: 'yellow',
+            color: '#E1C7A0',
             imageUrl: '/assets/furniture/items/chair.png'
         },
         {
             item: '1',
-            color: 'orange',
+            color: '#E1C7A0',
             imageUrl: '/assets/furniture/items/chair.png'
         },
         {
             item: '1',
-            color: 'green',
+            color: '#E1C7A0',
             imageUrl: '/assets/furniture/items/chair.png'
         },
         {
             item: '1',
-            color: 'orange',
+            color: '#E1C7A0',
             imageUrl: '/assets/furniture/items/chair.png'
         },
         {
             item: '1',
-            color: 'orange',
+            color: '#E1C7A0',
             imageUrl: '/assets/furniture/items/chair.png'
         }
     ]
     // bgcolor={MAIN_C0LOUR}
     return (
         <Grid container item justifyContent="center" sx={{
-            bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' }
+            bgcolor: MAIN_C0LOUR
+            // bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' }
         }}>
 
             <Grid item container bgcolor="" lg={11.5}  >
@@ -76,11 +77,24 @@ export default function Items() {
                                     src={data.imageUrl}
                                 />
 
-                                <Grid item container sx={{
-                                    border: '2px solid red',
-                                    justifyContent: 'center'
+                                <Grid container sx={{
+                                    border: `1px solid ${SECONDARY_COLOUR}`, borderRadius: 1
                                 }}>
-                                    A
+
+                                    <Grid container justifyContent="center">
+                                        <Typography m={1} sx={{
+                                            fontSize: { xs: 13, sm: 18, lg: 18 },
+                                            fontWeight: 550
+                                        }}>INTERIOR NAME</Typography>
+                                    </Grid>
+
+                                    <Grid container>
+                                        <Typography sx={{
+                                            fontSize: { xs: 13, sm: 18, lg: 18 },
+                                            ml: 1, fontWeight: 550
+                                        }}>DETAILS</Typography>
+                                    </Grid>
+
                                 </Grid>
 
                             </Grid>
@@ -95,3 +109,24 @@ export default function Items() {
         </Grid>
     )
 }
+
+
+
+
+
+
+{/* <Grid item container sx={{
+                                    border: `1px solid ${SECONDARY_COLOUR}`,
+                                    borderRadius: 1,
+
+                                }}>
+
+                                    
+
+                                    <Typography sx={{
+                                        fontSize: { xs: 10, lg: 18 }
+                                    }}>INTERIOR NAME</Typography>
+
+
+
+                                </Grid> */}
