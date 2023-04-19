@@ -40,16 +40,20 @@ export default function Items() {
     ]
 
     return (
-        <Grid container   item bgcolor="red" justifyContent="center" >
+        <Grid container item bgcolor="  " justifyContent="center" >
 
-            <Grid item container  >
-
+            <Grid item container bgcolor="red" lg={11 }  >
+            {/* mx={4} */}
                 {
                     items.map((data: any, index: any) =>
 
-                        <Grid item container key={index} bgcolor={data.color} xs={6} md={4} lg={3} justifyContent="center"   >
+                        <Grid item container key={index} xs={6} md={4} lg={3} justifyContent="center">
 
-                            fdskjg
+                            <Grid container item bgcolor="pink" my={1} xs={10} lg={10} justifyContent="center">
+
+                                ftjh
+                                
+                            </Grid>
 
                         </Grid>
 
