@@ -59,7 +59,7 @@ export default function Items() {
 
                         <Grid item container key={index} xs={6} md={4} lg={3} justifyContent="center">
 
-                            <Grid container item bgcolor={data.color} my={1} xs={10} lg={9} justifyContent="center" mt={5} sx={{
+                            <Grid container item bgcolor={data.color} my={1} xs={10} lg={8} justifyContent="center" mt={5} sx={{
                                 height: { xs: 250, sm: 400, lg: 400 }
                             }}>
 
@@ -76,7 +76,10 @@ export default function Items() {
                                     src={data.imageUrl}
                                 />
 
-                                <Grid item container sx={{ bgcolor: 'red', justifyContent: 'center' }}>
+                                <Grid item container sx={{
+                                    border: '2px solid red',
+                                    justifyContent: 'center'
+                                }}>
                                     A
                                 </Grid>
 
