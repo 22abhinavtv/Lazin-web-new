@@ -50,7 +50,7 @@ export default function WorkFlow() {
 
 
 
-            <Grid container sx={{ bgcolor: '', justifyContent: 'center' }}>
+            <Grid container my={5}>
 
                 {serviceItems.map((data: any, index: any) =>
 
