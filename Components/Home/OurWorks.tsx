@@ -18,10 +18,10 @@ import { SECONDARY_COLOR } from "@/utils/colors";
 import { OutlinedButton } from '../UI/Button/CustomizedButton';
 import { H2, H5 } from '../UI/Typography/Typography';
 
-export default function Works() {
+export const OurWorks = () => {
 
     return (
-        <Grid container justifyContent="center" bgcolor={MAIN_COLOR} py={10}>
+        <Grid container justifyContent="center" bgcolor={MAIN_COLOR} py={10} px={1}>
 
             <Grid container lg={11} pb={4}>
 
@@ -98,7 +98,23 @@ const Slider = () => {
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
-
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    600: {
+                        slidesPerView: 2,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    },
+                    1536: {
+                        slidesPerView: 4,
+                    },
+                }}
                 modules={[Pagination]}
                 className="mySwiper"
             >

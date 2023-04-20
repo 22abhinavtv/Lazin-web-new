@@ -3,9 +3,9 @@ import Banner from "./Banner";
 import UsedWoods from "./UsedWoods";
 import WorkFlow from "./WorkFlow";
 import { ExploreNow1, ExploreNow2 } from "./ExploreNow";
-import Works from "./Works";
 import { Consultation } from "./Consultation";
 import { Testimonials } from "./Testimonials";
+import { OurWorks } from "./OurWorks";
 
 
 export const HomePage = () => {
@@ -21,7 +21,7 @@ export const HomePage = () => {
 
             <ExploreNow1 />
 
-            <Works />
+            <OurWorks />
 
             <ExploreNow2 />
 

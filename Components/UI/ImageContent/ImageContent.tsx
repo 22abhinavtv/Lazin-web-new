@@ -12,7 +12,7 @@ export default function ImageContent(props: any) {
 
     return (
 
-        <Grid container bgcolor="#F5F5F5" justifyContent="center" py={10}>
+        <Grid container bgcolor="#F5F5F5" justifyContent="center" py={10} px={1}>
 
             <Grid container lg={10} justifyContent="center" alignItems="center">
 

@@ -3,8 +3,8 @@ import type { AppProps } from 'next/app'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Head from 'next/head'
 import { NavBar } from '@/Components/UI/Header/NavBar'
-import Footer from '@/Components/UI/Footer/Footer'
 import { MobileNavBar } from '@/Components/UI/Header/MobileNavBar'
+import { Footer } from '@/Components/Footer/Footer'
 
 const queryClient = new QueryClient()
 
