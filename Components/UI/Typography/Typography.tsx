@@ -63,7 +63,7 @@ export const H3 = (props: any) => {
             fontWeight: fontWeight,
             color: color,
             bgcolor: bgcolor,
-            fontSize: { xs: '1.3rem', sm: '1.7rem', md: '2rem', lg: '2.5rem' }
+            fontSize: { xs: '1.2rem', sm: '1.4rem', md: '1.8rem', lg: '1.8rem' }
         }}>{props.children}</Typography>
 
     )

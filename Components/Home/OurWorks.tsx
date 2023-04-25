@@ -121,7 +121,7 @@ const Slider = () => {
 
                 {swiperItems.map((data: any, index: any) =>
 
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
 
                         <Grid container justifyContent="start">
 
