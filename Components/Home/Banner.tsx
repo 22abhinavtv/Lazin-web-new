@@ -28,9 +28,7 @@ export default function Banner() {
 
                 <Grid container justifyContent="end" sx={{ bgcolor: "white", position: "absolute", bottom: 0, right: 0 }}>
 
-
                     <HoverButton px={3} bgcolor={SECONDARY_COLOR}>Start your project</HoverButton>
-
 
                 </Grid>
 

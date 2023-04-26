@@ -8,22 +8,22 @@ export default function UsedWoods() {
 
         {
             imageName: '',
-            image: '/assets/Home/wood/img-1.png',
+            image: 'assets/home/wood/img-1.png',
             description: ''
         },
         {
             imageName: '',
-            image: '/assets/Home/wood/img-2.png',
+            image: 'assets/home/wood/img-2.png',
             description: ''
         },
         {
             imageName: '',
-            image: '/assets/Home/wood/img-3.png',
+            image: 'assets/home/wood/img-3.png',
             description: ''
         },
         {
             imageName: '',
-            image: '/assets/Home/wood/img-4.png',
+            image: 'assets/home/wood/img-4.png',
             description: ''
         },
 
@@ -31,23 +31,22 @@ export default function UsedWoods() {
 
     return (
         <Grid item container justifyContent="center" sx={{
+            mt: { xs: 3, lg: 10 },
             bgcolor: MAIN_COLOR,
-            py: 4,
+            p: 3,
         }}>
 
             <Grid item container bgcolor="white" lg={10}
-                justifyContent="center" alignItems="center" sx={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}>
+                justifyContent="center" alignItems="center" sx={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', borderRadius: 1 }}>
 
                 {woodTypes.map((data: any, index: number) =>
 
-                    <Grid item container justifyContent="center"
-                        p={3}
-                        xs={6}
-                        md={3} key={index} >
+                    <Grid item container justifyContent="center" p={3} xs={6} md={3} key={index} >
 
                         <img
-                            width="50%"
-                            src={data.image} alt=""
+                            width="60%"
+                            src={data.image}
+                            alt="xkmnfkj"
                         />
 
                     </Grid>
@@ -61,3 +60,4 @@ export default function UsedWoods() {
 
     )
 }
+'assets/home/wood/img-1.png'
