@@ -4,7 +4,7 @@ import React from 'react'
 
 function index() {
     return (
-        <Grid container>
+        <Grid container mt={10}>
             <Gallery />
         </Grid >
     )

@@ -26,7 +26,7 @@ export const H1 = (props: any) => {
 
 export const H2 = (props: any) => {
 
-    const { width, textAlign, mx, my, mb, mt, m, px, py, pb, pt, p, fontFamily, fontWeight, color, bgcolor } = props;
+    const { width, textAlign, mx, my, mb, mt, m, px, py, pb, pt, p, fontFamily, fontWeight, color, bgcolor, height } = props;
 
     return (
 
@@ -40,6 +40,7 @@ export const H2 = (props: any) => {
             fontWeight: fontWeight,
             color: color,
             bgcolor: bgcolor,
+            height: height,
             fontSize: { xs: '1.3rem', sm: '1.7rem', md: '2rem', lg: '2.5rem' }
         }}>{props.children}</Typography>
 
@@ -49,7 +50,7 @@ export const H2 = (props: any) => {
 
 export const H3 = (props: any) => {
 
-    const { width, textAlign, mx, my, mb, mt, m, px, py, pb, pt, p, fontFamily, fontWeight, color, bgcolor } = props;
+    const { width, textAlign, mx, my, mb, mt, m, px, py, pb, pt, p, fontFamily, fontWeight, color, bgcolor, lineHeight } = props;
 
     return (
 
@@ -59,7 +60,7 @@ export const H3 = (props: any) => {
             textAlign: !textAlign ? 'start' : textAlign,
             mx: mx, my: my, mb: mb, mt: mt, m: m,
             px: px, py: py, pb: pb, pt: pt, p: p,
-            fontFamily: fontFamily,
+            fontFamily: fontFamily, lineHeight: lineHeight,
             fontWeight: fontWeight,
             color: color,
             bgcolor: bgcolor,
@@ -122,7 +123,7 @@ export const H5 = (props: any) => {
 
 export const H6 = (props: any) => {
 
-    const { width, textAlign, mx, my, mb, mt, m, px, py, pb, pt, p, fontFamily, fontWeight, color, bgcolor } = props;
+    const { height, width, textAlign, mx, my, mb, mt, m, px, py, pb, pt, p, fontFamily, fontWeight, color, bgcolor } = props;
 
     return (
 
@@ -136,6 +137,7 @@ export const H6 = (props: any) => {
             fontWeight: fontWeight,
             color: color,
             bgcolor: bgcolor,
+            height: height,
             fontSize: { xs: '0.9rem', sm: '1rem', md: '1.1rem', lg: '1.2rem' }
         }}>{props.children}</Typography>
 

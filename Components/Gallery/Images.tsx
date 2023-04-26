@@ -57,8 +57,8 @@ export default function Images() {
 
 
     return (
-        <Grid container justifyContent="center" m={2}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+        <Grid container justifyContent="center" py={6} sx={{ m: { sm: 1, lg: 4 } }}>
+            <ImageList sx={{ width: "90%" }} variant="masonry" cols={3} gap={8}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>
                         <img
