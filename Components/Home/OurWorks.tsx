@@ -100,10 +100,10 @@ const Slider = () => {
                 spaceBetween={30}
                 breakpoints={{
                     0: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     600: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                     },
                     900: {
                         slidesPerView: 3,
@@ -118,6 +118,9 @@ const Slider = () => {
                 modules={[Pagination]}
                 className="mySwiper"
             >
+
+
+                
 
                 {swiperItems.map((data: any, index: any) =>
 
