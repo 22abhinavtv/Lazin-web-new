@@ -13,8 +13,8 @@ export const HomePage = () => {
     return (
         <Grid container>
 
-            {/* <Banner /> */}
-
+            <Banner />
+{/* 
             <UsedWoods />
 
             <WorkFlow />
@@ -27,7 +27,7 @@ export const HomePage = () => {
 
             <Testimonials />
 
-            <Consultation />
+            <Consultation /> */}
 
         </Grid >
     )

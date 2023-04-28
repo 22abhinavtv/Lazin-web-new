@@ -31,7 +31,7 @@ export default function UsedWoods() {
 
     return (
         <Grid item container justifyContent="center" sx={{
-            mt: { xs: 3, lg: 10 },
+            mt: { xs: 3, lg:'' },
             bgcolor: MAIN_COLOR,
             p: 3,
         }}>
