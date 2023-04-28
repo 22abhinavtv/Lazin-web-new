@@ -34,9 +34,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
 
-      {/* <NavBar />
+      <NavBar />
 
-      <MobileNavBar /> */}
+      <MobileNavBar />
 
 
       <Component {...pageProps} />

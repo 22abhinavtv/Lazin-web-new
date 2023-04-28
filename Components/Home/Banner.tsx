@@ -22,31 +22,16 @@ export default function Banner() {
 
             <Grid container justifyContent="center"  >
 
-                <Grid container bgcolor="red" lg={6} sx={{
-                    mr: 20,
-                    mt: 2, mb: 2,
+                <Grid container bgcolor="red" lg={7} sx={{
+                    mr: 40,
+                    mt: 4, mb: 3,
                     height: '60vh',
-                    backgroundImage: `url(${bgImage})`
+                    backgroundImage: `url(${bgImage})`,
                 }}
                 >
-                    <Box width="40%" bgcolor="#ffff" sx={{
-                        height: "fit-content"
-                    }}>
-                        <Box bgcolor="" pt={10} pb={10} justifyContent="center">
+                   
 
-                            <H4 width="40" fontFamily='Syne' m={1.5} textAlign="center" height="fit-content">Interior decoration partly thrives on being social</H4>
-
-                            <H5 pt={5} width="100%" fontWeight="550" bgcolor="" textAlign="center">An interior designer is someone who
-                                plans researches,coordinations and
-                                manages enhancement projects
-                            </H5>
-
-                        </Box>
-                    </Box>
                 </Grid>
-
-
-
 
             </Grid>
 
@@ -61,10 +46,44 @@ export default function Banner() {
 
 
 
+// <Box width="40%" bgcolor="#ffff" sx={{
+//     height: "fit-content",
+//     ml: 'auto',
+//     mr: 0, mb: 40
+// }}>
+//     <Box bgcolor="red" pt={10} pb={10} m={1} sx={{
+
+//     }} justifyContent="center">
+
+//         <H4 width="40" fontFamily='Syne' m={1.5} textAlign="center" height="fit-content">Interior decoration partly thrives on being social</H4>
+
+//         <H5 pt={5} width="100%" fontWeight="550" bgcolor="" textAlign="center">An interior designer is someone who
+//             plans researches,coordinations and
+//             manages enhancement projects
+//         </H5>
+
+//     </Box>
+// </Box>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//mt={10}
 
 
 
