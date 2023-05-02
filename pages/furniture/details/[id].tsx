@@ -8,6 +8,11 @@ function index() {
 
       <Details />
 
+
+
+
+
+
     </Grid>
 
   )
