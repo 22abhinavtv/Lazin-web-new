@@ -13,30 +13,30 @@ export const MobileNavBar = () => {
 
   const navbarItems = [
     {
-      title: 'Home',
-      path: "/"
+        title: 'Home',
+        path: "/"
     },
     {
-      title: 'Furniture',
-      path: "/"
+        title: 'Furniture',
+        path: "/furniture"
     },
     {
-      title: 'About',
-      path: '/'
+        title: 'About',
+        path: '/about'
     },
     {
-      title: 'Project',
-      path: '/'
+        title: 'Project',
+        path: '/project'
     },
     {
-      title: 'Gallery',
-      path: '/'
+        title: 'Gallery',
+        path: '/gallery'
     },
     {
-      title: 'Contact Us',
-      path: '/'
+        title: 'Contact Us',
+        path: '/contactus'
     }
-  ]
+]
 
 
   const MenuBar = () => {
