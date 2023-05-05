@@ -21,9 +21,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Head>
 
-        <title>Oyvaa</title>
+        <title>Lazin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-
 
         <script src="https://kit.fontawesome.com/ed3b32139e.js"></script>
 

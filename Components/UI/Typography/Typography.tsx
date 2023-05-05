@@ -18,6 +18,7 @@ export const H1 = (props: any) => {
             color: color,
             bgcolor: bgcolor,
             fontSize: { xs: '2rem', sm: '3rem', md: '4rem', lg: '6rem' }
+            
         }}>{props.children}</Typography>
 
     )
@@ -90,6 +91,7 @@ export const H4 = (props: any) => {
             color: color,
             bgcolor: bgcolor,
             fontSize: { xs: '1rem', sm: '1.1rem', md: '1.18rem', lg: '1.25rem' }
+
         }}>{props.children}</Typography>
 
     )

@@ -76,7 +76,7 @@ export const Footer = () => {
 
                             <Typography variant='h6' sx={{ fontWeight: "bold", color: "black", mb: 1 }}>{data.main_title}</Typography>
 
-                            {data.children.map(child =>
+                            {data.children.map((child: any) =>
 
                                 <Typography sx={{ color: "black", mb: 1 }} variant='subtitle1' onClick={() => router.push(child.path)} >{child.sub_title}</Typography>
 

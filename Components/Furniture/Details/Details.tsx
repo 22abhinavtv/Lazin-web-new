@@ -53,7 +53,7 @@ export default function Details() {
                         boxShadow: { lg: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 2px -1px' },
                         borderRadius: { xs: 0, lg: 1 },
                         bgcolor: { xs: '', sm: '', mg: "", lg: "#ffff" }
-                    }} ListItem
+                    }} 
                 >
 
                     <Grid item
