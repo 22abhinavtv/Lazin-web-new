@@ -7,30 +7,34 @@ import { H3, H4, H5 } from '../UI/Typography/Typography'
 
 export default function Banner() {
 
-    const bgImage = '/assets/home/banner/banner.jpeg'
-
 
     return (
-
 
 
         <Grid container>
 
             <Grid py={10} container bgcolor={MAIN_COLOR} sx={{
-                mt: { xs: 7, lg: 10 }, justifyContent: 'center', alignItems: 'center',
+                mt: { xs: 0, lg: 10 }, justifyContent: 'center', alignItems: 'center',
             }}>
 
-                <Grid container
+                {/* <Grid container
                     sx={{ width: "5%", ml: 10, mt: 10 }}
                     component="img"
                     src='/assets/home/banner/shape-2.png'
-                />
+                /> */}
 
-                <img width="60%" src="/assets/home/banner/banner.jpeg" alt="" />
+                <Grid container sm={11} md={10} lg={8}>
 
-                <Grid sx={{
+                <img style={{padding:"10px"}} width="100%" src="/assets/home/banner/banner.jpeg" alt="" />
+
+                    
+                </Grid>
+
+             
+                <Grid  sx={{
+                    width:{xs: "100%", lg: "fit-content" },
                     bgcolor: "white", p: 4,
-                    position: 'absolute',
+                    position:  {xs:'static',lg: 'absolute'},
                     top: 100,
                     right: 100
                 }}>
@@ -42,7 +46,7 @@ export default function Banner() {
                         <br />
                         manages enhancement projects</Typography>
 
-                    <Grid container justifyContent="end" sx={{ bgcolor: "white", position: "absolute", bottom: 0, right: 0 }}>
+                    <Grid container justifyContent="end" sx={{ position:  {xs:'static',lg: 'absolute'}, bottom: 0, right: 0 }}>
 
                         <HoverButton px={3} bgcolor={SECONDARY_COLOR}>Start your project</HoverButton>
 

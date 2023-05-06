@@ -10,6 +10,7 @@ export default function Banner() {
         <Grid py={10} container bgcolor={MAIN_COLOR} sx={{
             mt: { xs: 7, lg: 10 }, justifyContent: 'center', alignItems: 'center', position: "relative"
         }}>
+            
 
             <img width="55%" src="/assets/home/banner/banner.jpeg" alt="" />
 
